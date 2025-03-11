@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Inspirado na Chanel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar-brand {
+            color: #fff !important;
+            font-size: 1.5rem;
+        }
+        .product-card {
+            margin-bottom: 30px; /* Mais espaçamento entre os cards */
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: 300px; /* Altura fixa para todas as imagens */
+            object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+        }
+        .product-card .card-body {
+            padding: 20px;
+            text-align: center; /* Centraliza o texto */
+        }
+        .product-card h5 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333; /* Cor mais escura para o título */
+        }
+        .product-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px; /* Espaçamento entre a descrição e o valor */
+        }
+        .product-card .price {
+            font-size: 1.1rem;
+            color: #000;
+            font-weight: bold;
+        }
+        .container.my-5 {
+            padding: 20px;
+        }
+        h2.text-center.mb-5 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Chanel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Produtos -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Nossos Produtos</h2>
+        <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume1.jpg" class="card-img-top img-fluid" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">CHANEL COCO</h5>
+                        <p class="card-text">Um perfume icônico que combina notas florais e amadeiradas, perfeito para mulheres sofisticadas.</p>
+                        <p class="price">R$ 850,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume2.jpg" class="card-img-top img-fluid" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">MISS DIOR</h5>
+                        <p class="card-text">Um perfume floral frutado, com um toque moderno e elegante, ideal para o dia a dia.</p>
+                        <p class="price">R$ 780,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume3.jpg" class="card-img-top img-fluid" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">CHANCE EAU TENDRE</h5>
+                        <p class="card-text">Um perfume fresco e delicado, com notas florais e frutadas, perfeito para momentos especiais.</p>
+                        <p class="price">R$ 720,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume4.jpg" class="card-img-top img-fluid" alt="Produto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">GABRIELLE CHANEL</h5>
+                        <p class="card-text">Um perfume floral solar, que reflete a liberdade e a ousadia da mulher moderna.</p>
+                        <p class="price">R$ 900,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 5 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume5.jpg" class="card-img-top img-fluid" alt="Produto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">ALLURE SENSUELLE</h5>
+                        <p class="card-text">Um perfume sensual e misterioso, com notas amadeiradas e especiarias, para noites inesquecíveis.</p>
+                        <p class="price">R$ 820,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 6 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume6.jpg" class="card-img-top img-fluid" alt="Produto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">N°19</h5>
+                        <p class="card-text">Um perfume clássico e sofisticado, com notas verdes e florais, para mulheres elegantes.</p>
+                        <p class="price">R$ 750,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 7 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/PERFUME7.jpg" class="card-img-top img-fluid" alt="Produto 7">
+                    <div class="card-body">
+                        <h5 class="card-title">N°5</h5>
+                        <p class="card-text">O perfume mais icônico da Chanel, com notas florais e almiscaradas, um símbolo de luxo.</p>
+                        <p class="price">R$ 950,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 8 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/PERFUME8.jpg" class="card-img-top img-fluid" alt="Produto 8">
+                    <div class="card-body">
+                        <h5 class="card-title">ALLURE</h5>
+                        <p class="card-text">Um perfume elegante e envolvente, com notas cítricas e florais, para mulheres confiantes.</p>
+                        <p class="price">R$ 800,00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Produto 9 -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="img/perfume9.jpg" class="card-img-top img-fluid" alt="Produto 9">
+                    <div class="card-body">
+                        <h5 class="card-title">BOY CHANEL</h5>
+                        <p class="card-text">Um perfume moderno e ousado, com notas amadeiradas e florais, para homens e mulheres.</p>
+                        <p class="price">R$ 880,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
